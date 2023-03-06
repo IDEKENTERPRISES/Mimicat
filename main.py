@@ -181,6 +181,4 @@ async def on_ready():
     await commands.sync()
     print(f'We have logged in as {client.user}')
 
-discord.app_commands.command(name="testing", description="this is a test", nsfw=True)
-
 client.run(os.environ.get('discord_bot_key'))
