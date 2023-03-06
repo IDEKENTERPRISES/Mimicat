@@ -1,0 +1,1 @@
+This folder will contain the generated audios (which will be deleted after playing)
