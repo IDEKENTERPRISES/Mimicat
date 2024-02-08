@@ -14,7 +14,7 @@ elevenKey = os.environ.get('eleven_api_key')
 discordKey = os.environ.get('discord_bot_key')
 
 if elevenKey is None or discordKey is None:
-    print("No eleven api key found.")
+    print("No api keys found.")
     exit(1)
 
 voicesRequest = requests.get("https://api.elevenlabs.io/v1/voices", headers={"accept": "application/json", "xi-api-key": elevenKey}).json()
